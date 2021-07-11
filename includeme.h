@@ -2,10 +2,13 @@
 #include <conio.h>
 int main(int argc, char const *argv[])
 {
-    int a,b,c;
+    int a,b,c,rem,firstdigit;
    a = atoi(argv[1]);
-   b = atoi(argv[2]);
-   c = atoi(argv[3]);
-   printf("%d",a+b+c);  
+    rem =a%10; 
+     firstdigit=(a/10);
+     firstdigit =firstdigit/10;
+     printf("%d",rem+firstdigit);
+
+    return 0;
     
 }
